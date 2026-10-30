@@ -4,20 +4,17 @@
  * Conecta CNAE -> Item LC 116 -> NBS -> cClassTrib -> CST IBS/CBS (LC 214/2025).
  */
 
-const fs = require('fs');
-const path = require('path');
-
 class CerebroTributario {
   constructor() {
-    this.dataDir = path.join(__dirname, '..', 'data');
     this.carregarDados();
   }
 
   carregarDados() {
-    this.cnaeDb = JSON.parse(fs.readFileSync(path.join(this.dataDir, 'cnae_lc116.json'), 'utf8'));
-    this.lc116Db = JSON.parse(fs.readFileSync(path.join(this.dataDir, 'lc116_nbs_reforma.json'), 'utf8'));
-    this.cstDb = JSON.parse(fs.readFileSync(path.join(this.dataDir, 'cst_cclasstrib.json'), 'utf8'));
-    this.grafoCompleto = JSON.parse(fs.readFileSync(path.join(this.dataDir, 'cerebro_tributario_completo.json'), 'utf8'));
+    // Uso direto de require para empacotamento 100% garantido no Vercel e Serverless
+    this.cnaeDb = require('../data/cnae_lc116.json');
+    this.lc116Db = require('../data/lc116_nbs_reforma.json');
+    this.cstDb = require('../data/cst_cclasstrib.json');
+    this.grafoCompleto = require('../data/cerebro_tributario_completo.json');
 
     // Criar índice reverso de NBS para Item LC 116 e cClassTrib
     this.indiceNbs = {};
@@ -66,11 +63,38 @@ class CerebroTributario {
   }
 
   /**
+   * Consulta diagnóstica direta por Item da LC 116 (ex: 01.01, 1.01, 04.01, etc.)
+   */
+  consultarPorItemLC116(itemInput) {
+    let clean = itemInput.trim().replace(/^item\s*/i, '');
+    const partes = clean.split('.');
+    if (partes.length === 2) {
+      const p1 = partes[0].padStart(2, '0');
+      const p2 = partes[1].padStart(2, '0');
+      clean = `${p1}.${p2}`;
+    }
+
+    const item = this.lc116Db[clean];
+    if (!item) return null;
+
+    const nbsEnriquecidas = (item.nbs_associadas || []).map(nbs => ({
+      ...nbs,
+      tributacao_reforma: this.indiceCClassTrib[nbs.cClassTrib_padrao] || null
+    }));
+
+    return {
+      item_lc116: item.item_lc116,
+      descricao: item.descricao,
+      nbs_associadas: nbsEnriquecidas
+    };
+  }
+
+  /**
    * Busca orientada por descrição do serviço ou palavras-chave
    */
   buscarServico(termoBusca) {
     const termoNorm = this.normalizarTexto(termoBusca);
-    const palavras = termoNorm.split(' ').filter(p => p.length >= 3);
+    const palavras = termoNorm.split(' ').filter(p => p.length >= 2);
     const resultados = [];
 
     // 1. Procurar nas NBS
@@ -79,9 +103,9 @@ class CerebroTributario {
       const descNorm = this.normalizarTexto(entry.descricao);
       let score = 0;
 
-      if (descNorm.includes(termoNorm)) score += 50;
+      if (descNorm.includes(termoNorm)) score += 60;
       palavras.forEach(p => {
-        if (descNorm.includes(p)) score += 10;
+        if (descNorm.includes(p)) score += 15;
         if (codigoNbs.replace(/[^0-9]/g, '').includes(p)) score += 30;
       });
 
@@ -105,7 +129,38 @@ class CerebroTributario {
       }
     }
 
-    // 2. Procurar nos CNAEs
+    // 2. Procurar nos Itens da LC 116
+    for (const itemCode in this.lc116Db) {
+      const item = this.lc116Db[itemCode];
+      const descNorm = this.normalizarTexto(item.descricao);
+      let score = 0;
+
+      if (descNorm.includes(termoNorm)) score += 50;
+      palavras.forEach(p => {
+        if (descNorm.includes(p)) score += 12;
+      });
+
+      if (score > 0 && item.nbs_associadas && item.nbs_associadas.length > 0) {
+        const primNbs = item.nbs_associadas[0];
+        const cClassInfo = this.indiceCClassTrib[primNbs.cClassTrib_padrao] || null;
+        resultados.push({
+          tipo: 'LC116',
+          score: score,
+          item_lc116: item.item_lc116,
+          item_lc116_descricao: item.descricao,
+          nbs: primNbs.codigo_nbs,
+          nbs_descricao: primNbs.descricao_nbs,
+          local_incidencia_ibs: primNbs.local_incidencia_ibs,
+          indop: primNbs.indop,
+          cClassTrib: primNbs.cClassTrib_padrao,
+          cClassTrib_nome: primNbs.nome_cClassTrib,
+          regras_reforma: cClassInfo,
+          todas_nbs: item.nbs_associadas
+        });
+      }
+    }
+
+    // 3. Procurar nos CNAEs
     for (const cnaeCode in this.cnaeDb) {
       const cnae = this.cnaeDb[cnaeCode];
       const descNorm = this.normalizarTexto(cnae.descricao);
@@ -113,7 +168,7 @@ class CerebroTributario {
 
       if (descNorm.includes(termoNorm)) score += 40;
       palavras.forEach(p => {
-        if (descNorm.includes(p)) score += 8;
+        if (descNorm.includes(p)) score += 10;
         if (cnaeCode.replace(/[^0-9]/g, '').includes(p)) score += 30;
       });
 
@@ -137,7 +192,6 @@ class CerebroTributario {
       }
     }
 
-    // Ordenar por score decrescente
     return resultados.sort((a, b) => b.score - a.score);
   }
 

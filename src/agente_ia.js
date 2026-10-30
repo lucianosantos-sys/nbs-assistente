@@ -27,7 +27,15 @@ class AgenteTributarioIA {
 
     const textoLimpo = input.trim();
 
-    // 1. Verificar se é consulta direta por CNAE (ex: 62.01-5-01 ou 6201501)
+    // 1. Consulta por Item LC 116 direto (ex: 01.01, 1.01, 04.01, etc.)
+    if (/^(item\s*)?\d{1,2}\.\d{2}$/i.test(textoLimpo)) {
+      const resItem = this.cerebro.consultarPorItemLC116(textoLimpo);
+      if (resItem) {
+        return this.formatarOrientacaoPorItemLC116(resItem);
+      }
+    }
+
+    // 2. Consulta por CNAE (ex: 62.01-5-01 ou 6201501)
     if (/^\d{2}\.?\d{2}-?\d-?\d{2}$/.test(textoLimpo) || (/^\d{7}$/.test(textoLimpo) && !textoLimpo.startsWith('1'))) {
       const resultadoCnae = this.cerebro.consultarPorCNAE(textoLimpo);
       if (resultadoCnae) {
@@ -35,7 +43,7 @@ class AgenteTributarioIA {
       }
     }
 
-    // 2. Verificar se é consulta direta por código NBS (ex: 1.1502.10.00 ou 115021000)
+    // 3. Consulta por NBS (ex: 1.1502.10.00 ou 115021000)
     if (/^1\.?\d{4}\.?\d{2}\.?\d{2}$/.test(textoLimpo) || (/^\d{9}$/.test(textoLimpo) && textoLimpo.startsWith('1'))) {
       const resultadoNbs = this.cerebro.consultarPorNBS(textoLimpo);
       if (resultadoNbs) {
@@ -43,16 +51,60 @@ class AgenteTributarioIA {
       }
     }
 
-    // 3. Consulta em Linguagem Natural / Descrição do Serviço
+    // 4. Consulta em Linguagem Natural / Descrição do Serviço
     const busca = this.cerebro.buscarServico(textoLimpo);
     if (!busca || busca.length === 0) {
       return {
         status: "nao_encontrado",
-        mensagem: `Não encontrei correspondência exata para "${input}". Tente detalhar melhor a atividade (ex: "desenvolvimento de software", "consulta médica", "obra de construção civil", "treinamento profissional").`
+        mensagem: `Não encontrei correspondência exata para "${input}". Tente buscar por palavras-chave (ex: "software", "médico", "obras", "contabilidade", "advocacia") ou informe o CNAE.`
       };
     }
 
     return this.formatarOrientacaoPorBusca(textoLimpo, busca);
+  }
+
+  /**
+   * Formata orientação quando o cliente pesquisa diretamente pelo Item da LC 116
+   */
+  formatarOrientacaoPorItemLC116(dadosItem) {
+    const nbsLista = dadosItem.nbs_associadas || [];
+    const nbsPrincipal = nbsLista[0] || {};
+    const ref = nbsPrincipal.tributacao_reforma || {};
+
+    return {
+      status: "sucesso",
+      modo: "consulta_lc116",
+      codigo_tributacao_nacional_lc116: dadosItem.item_lc116,
+      descricao_item_lc116: dadosItem.descricao,
+      recomendacao_principal: {
+        codigo_tributacao_nacional_lc116: dadosItem.item_lc116,
+        descricao_item_lc116: dadosItem.descricao,
+        codigo_nbs_sugerido: nbsPrincipal.codigo_nbs || "N/A",
+        descricao_nbs: nbsPrincipal.descricao_nbs || "N/A",
+        cClassTrib: nbsPrincipal.cClassTrib_padrao || "000001",
+        cClassTrib_nome: nbsPrincipal.nome_cClassTrib || "Tributação integral",
+        cst_ibs_cbs: ref.cst || "000",
+        local_incidencia_reforma: nbsPrincipal.local_incidencia_ibs || "Domicílio principal do adquirente",
+        regras_beneficio_reforma: {
+          reducao_ibs: ref.reducao_percentual?.ibs || 0,
+          reducao_cbs: ref.reducao_percentual?.cbs || 0,
+          tipo_aliquota: ref.tipo_aliquota || "Padrão",
+          fundamento_legal: ref.artigo_lc214 || "LC 214/2025"
+        }
+      },
+      guia_de_preenchimento: [
+        `1. No campo 'Código de Tributação Nacional' (Item da LC 116): Preencha '${dadosItem.item_lc116}'`,
+        `2. No campo 'Código NBS': Utilize '${nbsPrincipal.codigo_nbs}' - ${nbsPrincipal.descricao_nbs}`,
+        `3. No campo 'cClassTrib': Utilize '${nbsPrincipal.cClassTrib_padrao || "000001"}'`,
+        `4. No campo 'CST IBS/CBS': Preencha '${ref.cst || "000"}'`,
+        `5. Local de Incidência (Reforma): ${nbsPrincipal.local_incidencia_ibs || "Domicílio do adquirente"}`
+      ],
+      opcoes_alternativas: nbsLista.slice(1).map(n => ({
+        nbs: n.codigo_nbs,
+        descricao: n.descricao_nbs,
+        item_lc116: dadosItem.item_lc116
+      }))
+    };
   }
 
   /**
@@ -68,7 +120,7 @@ class AgenteTributarioIA {
       recomendacao_principal: {
         codigo_tributacao_nacional_lc116: melhorOpcao.item_lc116,
         descricao_item_lc116: melhorOpcao.item_lc116_descricao,
-        codigo_nbs_sugerido: melhorOpcao.nbs || (melhorOpcao.nbs_compativeis && melhorOpcao.nbs_compativeis[0]?.codigo_nbs) || "Consulte as opções abaixo",
+        codigo_nbs_sugerido: melhorOpcao.nbs || (melhorOpcao.nbs_compativeis && melhorOpcao.nbs_compativeis[0]?.codigo_nbs) || "Consulte as opções",
         descricao_nbs: melhorOpcao.nbs_descricao || (melhorOpcao.nbs_compativeis && melhorOpcao.nbs_compativeis[0]?.descricao_nbs) || "",
         cClassTrib: melhorOpcao.cClassTrib || (melhorOpcao.regras_reforma?.cClassTrib) || "000001",
         cClassTrib_nome: melhorOpcao.cClassTrib_nome || (melhorOpcao.regras_reforma?.nome) || "Situações tributadas integralmente pelo IBS e CBS",
@@ -83,7 +135,7 @@ class AgenteTributarioIA {
       },
       guia_de_preenchimento: [
         `1. No campo 'Código de Tributação Nacional' (Item da LC 116): Selecione '${melhorOpcao.item_lc116}'`,
-        `2. No campo 'Código NBS (Nomenclatura Brasileira de Serviços)': Preencha '${melhorOpcao.nbs || (melhorOpcao.nbs_compativeis && melhorOpcao.nbs_compativeis[0]?.codigo_nbs)}'`,
+        `2. No campo 'Código NBS': Preencha '${melhorOpcao.nbs || (melhorOpcao.nbs_compativeis && melhorOpcao.nbs_compativeis[0]?.codigo_nbs)}'`,
         `3. No campo 'Classificação Tributária IBS/CBS (cClassTrib)': Utilize '${melhorOpcao.cClassTrib || "000001"}'`,
         `4. No campo 'CST IBS/CBS': Informe '${melhorOpcao.regras_reforma?.cst || "000"}'`,
         `5. Atenção ao Local de Incidência: Pela Reforma Tributária (LC 214/2025), este serviço é tributado no ${melhorOpcao.local_incidencia_ibs || "Domicílio do Adquirente"}.`

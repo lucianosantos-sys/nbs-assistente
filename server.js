@@ -5,261 +5,21 @@
 
 const http = require('http');
 const url = require('url');
+const fs = require('fs');
+const path = require('path');
 const AgenteTributarioIA = require('./src/agente_ia');
 
 const agente = new AgenteTributarioIA();
 const PORT = process.env.PORT || 3000;
 
-const htmlInterface = `<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TributaIA - Orientador de Código Nacional & NBS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #2563eb;
-      --primary-hover: #1d4ed8;
-      --bg: #0f172a;
-      --card-bg: #1e293b;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --border: #334155;
-      --accent: #10b981;
-      --badge-bg: #1e3a8a;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-    body { background-color: var(--bg); color: var(--text); padding: 24px 16px; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
-    .container { width: 100%; max-width: 900px; }
-    header { text-align: center; margin-bottom: 32px; }
-    header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: #fff; display: flex; align-items: center; justify-content: center; gap: 10px; }
-    header p { color: var(--text-muted); font-size: 15px; }
-    .search-box { display: flex; gap: 8px; margin-bottom: 24px; position: relative; }
-    input[type="text"] {
-      flex: 1; padding: 16px 20px; font-size: 16px; border-radius: 12px; border: 1px solid var(--border);
-      background-color: var(--card-bg); color: #fff; outline: none; transition: border-color 0.2s;
-    }
-    input[type="text"]:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37,99,235,0.25); }
-    button.btn-search {
-      padding: 0 28px; background-color: var(--primary); color: #fff; border: none; border-radius: 12px;
-      font-size: 16px; font-weight: 600; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; gap: 8px;
-    }
-    button.btn-search:hover { background-color: var(--primary-hover); }
-    .quick-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; justify-content: center; }
-    .tag {
-      background-color: var(--card-bg); border: 1px solid var(--border); color: var(--text-muted);
-      padding: 6px 12px; border-radius: 20px; font-size: 13px; cursor: pointer; transition: all 0.2s;
-    }
-    .tag:hover { border-color: var(--primary); color: #fff; }
-    .result-card {
-      background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 28px;
-      margin-bottom: 24px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3); display: none;
-    }
-    .badge {
-      display: inline-block; background-color: var(--badge-bg); color: #93c5fd; padding: 4px 12px;
-      border-radius: 6px; font-size: 12px; font-weight: 600; text-transform: uppercase; margin-bottom: 16px;
-    }
-    .codes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 20px 0; }
-    .code-box {
-      background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
-      position: relative;
-    }
-    .code-label { font-size: 12px; color: var(--text-muted); font-weight: 500; margin-bottom: 6px; text-transform: uppercase; }
-    .code-value { font-size: 20px; font-weight: 700; color: #38bdf8; font-family: monospace; }
-    .code-desc { font-size: 13px; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
-    .copy-btn {
-      position: absolute; top: 12px; right: 12px; background: transparent; border: 1px solid var(--border);
-      color: var(--text-muted); border-radius: 6px; padding: 4px 8px; font-size: 11px; cursor: pointer;
-    }
-    .copy-btn:hover { color: #fff; border-color: var(--primary); }
-    .step-list { margin-top: 20px; background: rgba(15, 23, 42, 0.4); border-radius: 12px; padding: 18px 20px; border-left: 4px solid var(--accent); }
-    .step-list h4 { font-size: 15px; margin-bottom: 12px; color: var(--accent); }
-    .step-list li { margin-left: 20px; margin-bottom: 8px; font-size: 14px; color: #e2e8f0; line-height: 1.5; }
-    .info-footer { text-align: center; font-size: 13px; color: var(--text-muted); margin-top: 32px; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>🤖 TributaIA - Agente de Tributação</h1>
-      <p>Orientação instantânea do Código de Tributação Nacional (LC 116) e NBS para a NFS-e & Reforma Tributária (IBS/CBS)</p>
-    </header>
-
-    <div class="search-box">
-      <input type="text" id="queryInput" placeholder="Ex: desenvolvimento de software, CNAE 62.01-5-01, consulta médica...">
-      <button class="btn-search" onclick="consultar()">Consultar IA</button>
-    </div>
-
-    <div class="quick-tags">
-      <span class="tag" onclick="pesquisarRapido('Desenvolvimento de software SaaS')">💻 Software SaaS</span>
-      <span class="tag" onclick="pesquisarRapido('Consulta médica ambulatorial')">🩺 Medicina</span>
-      <span class="tag" onclick="pesquisarRapido('Construção de edifícios e obras')">🏗️ Construção Civil</span>
-      <span class="tag" onclick="pesquisarRapido('CNAE 62.01-5-01')">📄 CNAE 62.01-5-01</span>
-      <span class="tag" onclick="pesquisarRapido('NBS 1.2301.22.00')">📑 NBS 1.2301.22.00</span>
-      <span class="tag" onclick="pesquisarRapido('Treinamento e cursos profissionais')">🎓 Educação</span>
-    </div>
-
-    <div id="resultContainer" class="result-card"></div>
-
-    <div class="info-footer">
-      Base Integrada: Lei Complementar nº 116/2003 (ISS) • Nomenclatura Brasileira de Serviços (NBS) • Lei Complementar nº 214/2025 (IBS/CBS)
-    </div>
-  </div>
-
-  <script>
-    async function consultar() {
-      const q = document.getElementById('queryInput').value.trim();
-      if (!q) return;
-      const resCard = document.getElementById('resultContainer');
-      resCard.style.display = 'block';
-      resCard.innerHTML = '<p style="text-align:center; color:#94a3b8;">Analisando regras fiscais e correlacionando códigos...</p>';
-
-      try {
-        const resp = await fetch('/api/orientar?q=' + encodeURIComponent(q));
-        const data = await resp.json();
-        renderizarResposta(data);
-      } catch (err) {
-        resCard.innerHTML = '<p style="color:#ef4444;">Erro ao processar consulta. Tente novamente.</p>';
-      }
-    }
-
-    function pesquisarRapido(termo) {
-      document.getElementById('queryInput').value = termo;
-      consultar();
-    }
-
-    function copiar(txt) {
-      navigator.clipboard.writeText(txt);
-      alert('Copiado: ' + txt);
-    }
-
-    function renderizarResposta(data) {
-      const card = document.getElementById('resultContainer');
-      if (data.status !== 'sucesso') {
-        card.innerHTML = \`<p style="color:#f59e0b;">\${data.mensagem || 'Não foi possível encontrar uma correspondência direta.'}</p>\`;
-        return;
-      }
-
-      let html = '';
-      if (data.modo === 'consulta_cnae') {
-        const r = data.resumo_orientacao;
-        html = \`
-          <span class="badge">Diagnóstico por CNAE: \${data.cnae_consultado}</span>
-          <h2 style="font-size:20px; margin-bottom:8px;">\${data.descricao_empresa}</h2>
-          <div class="codes-grid">
-            <div class="code-box">
-              <button class="copy-btn" onclick="copiar('\${r.codigo_tributacao_nacional_lc116}')">Copiar</button>
-              <div class="code-label">Código Nacional (LC 116)</div>
-              <div class="code-value">\${r.codigo_tributacao_nacional_lc116}</div>
-              <div class="code-desc">\${r.descricao_servico}</div>
-            </div>
-            <div class="code-box">
-              <button class="copy-btn" onclick="copiar('\${r.nbs_padrao_sugerida}')">Copiar</button>
-              <div class="code-label">Código NBS Sugerido</div>
-              <div class="code-value">\${r.nbs_padrao_sugerida}</div>
-              <div class="code-desc">\${r.descricao_nbs}</div>
-            </div>
-            <div class="code-box">
-              <button class="copy-btn" onclick="copiar('\${r.reforma_tributaria.cClassTrib}')">Copiar</button>
-              <div class="code-label">cClassTrib (IBS/CBS)</div>
-              <div class="code-value">\${r.reforma_tributaria.cClassTrib}</div>
-              <div class="code-desc">\${r.reforma_tributaria.nome_classificacao}</div>
-            </div>
-            <div class="code-box">
-              <div class="code-label">CST & Alíquota</div>
-              <div class="code-value">CST \${r.reforma_tributaria.cst_ibs_cbs}</div>
-              <div class="code-desc">ISS Atual: \${r.aliquota_iss_vigente} | Destino: \${r.reforma_tributaria.local_incidencia_ibs}</div>
-            </div>
-          </div>
-          <div class="step-list">
-            <h4>💡 Passo a Passo para Emissão da NFS-e</h4>
-            <ul>\${data.passo_a_passo_emissao_nota.map(s => \`<li>\${s}</li>\`).join('')}</ul>
-          </div>
-        \`;
-      } else if (data.modo === 'consulta_nbs') {
-        const e = data.enquadramento;
-        html = \`
-          <span class="badge">Diagnóstico por Código NBS: \${data.codigo_nbs}</span>
-          <h2 style="font-size:20px; margin-bottom:8px;">\${data.descricao_nbs}</h2>
-          <div class="codes-grid">
-            <div class="code-box">
-              <button class="copy-btn" onclick="copiar('\${e.codigo_tributacao_nacional_lc116}')">Copiar</button>
-              <div class="code-label">Código Nacional (LC 116)</div>
-              <div class="code-value">\${e.codigo_tributacao_nacional_lc116}</div>
-              <div class="code-desc">\${e.descricao_item_lc116}</div>
-            </div>
-            <div class="code-box">
-              <button class="copy-btn" onclick="copiar('\${e.cClassTrib}')">Copiar</button>
-              <div class="code-label">cClassTrib (Reforma)</div>
-              <div class="code-value">\${e.cClassTrib}</div>
-              <div class="code-desc">\${e.nome_cClassTrib}</div>
-            </div>
-            <div class="code-box">
-              <div class="code-label">CST IBS/CBS</div>
-              <div class="code-value">\${e.cst_ibs_cbs}</div>
-              <div class="code-desc">Regime: \${e.tipo_aliquota} (\${e.reducao_aliquota.ibs}% red.)</div>
-            </div>
-            <div class="code-box">
-              <div class="code-label">Local Incidência</div>
-              <div class="code-value" style="font-size:16px;">\${e.local_incidencia_ibs}</div>
-              <div class="code-desc">Base legal: \${e.fundamento_legal}</div>
-            </div>
-          </div>
-          <div class="step-list">
-            <h4>💡 Instruções de Preenchimento</h4>
-            <ul>\${data.instrucoes_de_preenchimento.map(s => \`<li>\${s}</li>\`).join('')}</ul>
-          </div>
-        \`;
-      } else {
-        const rec = data.recomendacao_principal;
-        html = \`
-          <span class="badge">Orientação para: "\${data.consulta}"</span>
-          <h2 style="font-size:20px; margin-bottom:8px;">\${rec.descricao_nbs || rec.descricao_item_lc116}</h2>
-          <div class="codes-grid">
-            <div class="code-box">
-              <button class="copy-btn" onclick="copiar('\${rec.codigo_tributacao_nacional_lc116}')">Copiar</button>
-              <div class="code-label">Código Nacional (LC 116)</div>
-              <div class="code-value">\${rec.codigo_tributacao_nacional_lc116}</div>
-              <div class="code-desc">\${rec.descricao_item_lc116}</div>
-            </div>
-            <div class="code-box">
-              <button class="copy-btn" onclick="copiar('\${rec.codigo_nbs_sugerido}')">Copiar</button>
-              <div class="code-label">Código NBS</div>
-              <div class="code-value">\${rec.codigo_nbs_sugerido}</div>
-              <div class="code-desc">\${rec.descricao_nbs}</div>
-            </div>
-            <div class="code-box">
-              <button class="copy-btn" onclick="copiar('\${rec.cClassTrib}')">Copiar</button>
-              <div class="code-label">cClassTrib (Reforma)</div>
-              <div class="code-value">\${rec.cClassTrib}</div>
-              <div class="code-desc">\${rec.cClassTrib_nome}</div>
-            </div>
-            <div class="code-box">
-              <div class="code-label">CST & Regra Fiscal</div>
-              <div class="code-value">CST \${rec.cst_ibs_cbs}</div>
-              <div class="code-desc">Local: \${rec.local_incidencia_reforma}</div>
-            </div>
-          </div>
-          <div class="step-list">
-            <h4>💡 Como Preencher no Emissor da NFS-e</h4>
-            <ul>\${data.guia_de_preenchimento.map(s => \`<li>\${s}</li>\`).join('')}</ul>
-          </div>
-        \`;
-      }
-
-      card.innerHTML = html;
-    }
-  </script>
-</body>
-</html>`;
+const htmlInterface = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
 
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url, true);
+  const cleanPath = (parsedUrl.pathname || '').replace(/^\/public/, '');
 
   // Endpoint da API: /api/orientar?q=...
-  if (parsedUrl.pathname === '/api/orientar') {
+  if (cleanPath === '/api/orientar' || cleanPath.startsWith('/api/orientar')) {
     const q = parsedUrl.query.q || '';
     const orientacao = agente.orientarCliente(q);
     res.writeHead(200, {
@@ -270,7 +30,7 @@ const server = http.createServer((req, res) => {
   }
 
   // Página HTML principal
-  if (parsedUrl.pathname === '/' || parsedUrl.pathname === '/index.html') {
+  if (cleanPath === '/' || cleanPath === '/index.html') {
     res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
     return res.end(htmlInterface);
   }
@@ -280,8 +40,12 @@ const server = http.createServer((req, res) => {
   res.end('Página não encontrada.');
 });
 
-server.listen(PORT, () => {
-  console.log(`🌐 Servidor do Agente Tributário de IA ativo na porta ${PORT}`);
-  console.log(`👉 Acesse no navegador: http://localhost:${PORT}`);
-  console.log(`📡 API REST disponível em: http://localhost:${PORT}/api/orientar?q=sua_consulta`);
-});
+if (require.main === module) {
+  server.listen(PORT, () => {
+    console.log(`🌐 Servidor do Agente Tributário de IA ativo na porta ${PORT}`);
+    console.log(`👉 Acesse no navegador: http://localhost:${PORT}`);
+    console.log(`📡 API REST disponível em: http://localhost:${PORT}/api/orientar?q=sua_consulta`);
+  });
+}
+
+module.exports = server;
