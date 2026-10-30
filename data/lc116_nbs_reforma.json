@@ -1,0 +1,1968 @@
+{
+  "01.01": {
+    "item_lc116": "01.01",
+    "descricao": "Análise E Desenvolvimento De Sistemas.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1502.10.00",
+        "descricao_nbs": "Serviços de projeto, desenvolvimento e instalação de aplicativos e programas não personalizados (não customizados)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.20.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento, adaptação e instalação de aplicativos e programas personalizados (customizados)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.40.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de estruturas e conteúdo de bancos de dados",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.50.00",
+        "descricao_nbs": "Serviços de integração de sistemas em tecnologia da informação (TI)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.90.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de aplicativos e programas em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.90.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de aplicativos e programas em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200043",
+        "nome_cClassTrib": "Fornecimento à administração pública dos serviços e dos bens relativos à soberania (Anexo XI)"
+      },
+      {
+        "codigo_nbs": "1.1502.90.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de aplicativos e programas em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200044",
+        "nome_cClassTrib": "Operações e prestações de serviços de segurança da informação e segurança cibernética desenvolvidos por sociedade que tenha sócio brasileiro (Anexo XI)"
+      },
+      {
+        "codigo_nbs": "1.1503.00.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de redes em tecnologia da informação (TI)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1504.00.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de topografias de circuitos integrados",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1505.00.00",
+        "descricao_nbs": "Serviços de projeto de circuitos integrados",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1507.10.00",
+        "descricao_nbs": "Serviços de gerenciamento de redes em tecnologia da informação (TI)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1507.20.00",
+        "descricao_nbs": "Serviços de gerenciamento de sistemas computacionais",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1507.90.00",
+        "descricao_nbs": "Serviços de gerenciamento de infraestrutura em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "01.02": {
+    "item_lc116": "01.02",
+    "descricao": "Programação.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1502.10.00",
+        "descricao_nbs": "Serviços de projeto, desenvolvimento e instalação de aplicativos e programas não personalizados (não customizados)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.20.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento, adaptação e instalação de aplicativos e programas personalizados (customizados)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.90.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de aplicativos e programas em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.90.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de aplicativos e programas em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200043",
+        "nome_cClassTrib": "Fornecimento à administração pública dos serviços e dos bens relativos à soberania (Anexo XI)"
+      },
+      {
+        "codigo_nbs": "1.1502.90.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de aplicativos e programas em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200044",
+        "nome_cClassTrib": "Operações e prestações de serviços de segurança da informação e segurança cibernética desenvolvidos por sociedade que tenha sócio brasileiro (Anexo XI)"
+      }
+    ]
+  },
+  "01.03": {
+    "item_lc116": "01.03",
+    "descricao": "Processamento, Armazenamento Ou Hospedagem De Dados, Textos, Imagens, Vídeos, Páginas Eletrônicas, Aplicativos E Sistemas De Informação, Entre Outros Formatos, E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1506.10.00",
+        "descricao_nbs": "Serviços de hospedagem de sítios eletrônicos na rede mundial de computadores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1506.21.00",
+        "descricao_nbs": "Serviços de hospedagem de aplicativos e programas software como serviço (SaaS)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1506.22.00",
+        "descricao_nbs": "Serviços de fornecimento de infraestrutura como serviço (IaaS)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1506.23.00",
+        "descricao_nbs": "Serviços de fornecimento de plataformas como serviço (PaaS)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1506.29.00",
+        "descricao_nbs": "Serviços de hospedagem de aplicativos e programas não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1506.90.00",
+        "descricao_nbs": "Serviços de hospedagem e de disponibilização de infraestrutura em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1509.00.00",
+        "descricao_nbs": "Serviços de processamento de dados",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "01.04": {
+    "item_lc116": "01.04",
+    "descricao": "Elaboração De Programas De Computadores, Inclusive De Jogos Eletrônicos, Independentemente Da Arquitetura Construtiva Da Máquina Em Que O Programa Será Executado, Incluindo Tablets, Smartphones E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1502.10.00",
+        "descricao_nbs": "Serviços de projeto, desenvolvimento e instalação de aplicativos e programas não personalizados (não customizados)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.20.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento, adaptação e instalação de aplicativos e programas personalizados (customizados)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.90.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de aplicativos e programas em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.90.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de aplicativos e programas em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200043",
+        "nome_cClassTrib": "Fornecimento à administração pública dos serviços e dos bens relativos à soberania (Anexo XI)"
+      },
+      {
+        "codigo_nbs": "1.1502.90.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de aplicativos e programas em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200044",
+        "nome_cClassTrib": "Operações e prestações de serviços de segurança da informação e segurança cibernética desenvolvidos por sociedade que tenha sócio brasileiro (Anexo XI)"
+      }
+    ]
+  },
+  "01.05": {
+    "item_lc116": "01.05",
+    "descricao": "Licenciamento Ou Cessão De Direito De Uso De Programas De Computação.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1103.21.00",
+        "descricao_nbs": "Licenciamento de direitos de produção, distribuição ou comercialização de programas de computador (software)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100501",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1103.22.00",
+        "descricao_nbs": "Licenciamento de direitos de uso de programas de computador (software)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100501",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1103.23.00",
+        "descricao_nbs": "Licenciamento de direitos sobre bancos de dados",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100501",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1103.29.00",
+        "descricao_nbs": "Licenciamento de direitos sobre programas de computador (software) e bancos de dados não classificado em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100501",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1106.20.00",
+        "descricao_nbs": "Cessão temporária de direitos sobre programas de computador (software)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100501",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1107.20.00",
+        "descricao_nbs": "Cessão definitiva de direitos sobre programas de computador (software)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100501",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "01.06": {
+    "item_lc116": "01.06",
+    "descricao": "Assessoria E Consultoria Em Informática.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1501.10.00",
+        "descricao_nbs": "Serviços de consultoria em tecnologia da informação (TI)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1501.20.00",
+        "descricao_nbs": "Serviços de segurança em tecnologia da informação (TI)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1501.20.00",
+        "descricao_nbs": "Serviços de segurança em tecnologia da informação (TI)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200043",
+        "nome_cClassTrib": "Fornecimento à administração pública dos serviços e dos bens relativos à soberania (Anexo XI)"
+      },
+      {
+        "codigo_nbs": "1.1501.20.00",
+        "descricao_nbs": "Serviços de segurança em tecnologia da informação (TI)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200044",
+        "nome_cClassTrib": "Operações e prestações de serviços de segurança da informação e segurança cibernética desenvolvidos por sociedade que tenha sócio brasileiro (Anexo XI)"
+      },
+      {
+        "codigo_nbs": "1.1507.10.00",
+        "descricao_nbs": "Serviços de gerenciamento de redes em tecnologia da informação (TI)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1507.20.00",
+        "descricao_nbs": "Serviços de gerenciamento de sistemas computacionais",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1507.90.00",
+        "descricao_nbs": "Serviços de gerenciamento de infraestrutura em tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1510.00.00",
+        "descricao_nbs": "Serviços de tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1510.00.00",
+        "descricao_nbs": "Serviços de tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200043",
+        "nome_cClassTrib": "Fornecimento à administração pública dos serviços e dos bens relativos à soberania (Anexo XI)"
+      },
+      {
+        "codigo_nbs": "1.1510.00.00",
+        "descricao_nbs": "Serviços de tecnologia da informação (TI) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200044",
+        "nome_cClassTrib": "Operações e prestações de serviços de segurança da informação e segurança cibernética desenvolvidos por sociedade que tenha sócio brasileiro (Anexo XI)"
+      }
+    ]
+  },
+  "01.07": {
+    "item_lc116": "01.07",
+    "descricao": "Suporte Técnico Em Informática, Inclusive Instalação, Configuração E Manutenção De Programas De Computação E Bancos De Dados.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1501.30.00",
+        "descricao_nbs": "Serviços de suporte em tecnologia da informação (TI)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1508.00.00",
+        "descricao_nbs": "Serviços de manutenção de aplicativos e programas",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.10.00",
+        "descricao_nbs": "Serviços de projeto, desenvolvimento e instalação de aplicativos e programas não personalizados (não customizados)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.20.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento, adaptação e instalação de aplicativos e programas personalizados (customizados)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "01.08": {
+    "item_lc116": "01.08",
+    "descricao": "Planejamento, Confecção, Manutenção E Atualização De Páginas Eletrônicas.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1502.30.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de estruturas e conteúdo de páginas eletrônicas",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1502.30.00",
+        "descricao_nbs": "Serviços de projeto e desenvolvimento de estruturas e conteúdo de páginas eletrônicas",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200040",
+        "nome_cClassTrib": "Fornecimento de serviços de comunicação institucional à administração pública"
+      }
+    ]
+  },
+  "01.09": {
+    "item_lc116": "01.09",
+    "descricao": "Disponibilização, Sem Cessão Definitiva, De Conteúdos De Áudio, Vídeo, Imagem E Texto Por Meio Da Internet, Respeitada A Imunidade De Livros, Jornais E Periódicos.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1703.10.00",
+        "descricao_nbs": "Serviços de oferta de livros, jornais, periódicos, diretórios e malas diretas de acesso imediato (on-line)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1703.21.00",
+        "descricao_nbs": "Serviços de oferta de áudio para download",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1703.22.00",
+        "descricao_nbs": "Serviços de oferta de áudio de conteúdo contínuo (streaming)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1703.31.00",
+        "descricao_nbs": "Serviços de oferta de arquivos contendo filmes e vídeos para download",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1703.32.00",
+        "descricao_nbs": "Serviços de oferta de filmes e vídeos de conteúdo contínuo (streaming)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1703.91.00",
+        "descricao_nbs": "Serviços de oferta de jogos de acesso imediato (on-line)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1703.92.00",
+        "descricao_nbs": "Serviços de oferta de conteúdo de portais de busca na rede mundial de computadores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1703.99.00",
+        "descricao_nbs": "Serviços de oferta de outros conteúdos de acesso imediato (on-line) não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "02.01": {
+    "item_lc116": "02.01",
+    "descricao": "Serviços De Pesquisas E Desenvolvimento De Qualquer Natureza.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1201.11.00",
+        "descricao_nbs": "Serviços de pesquisa e desenvolvimento em ciências físicas",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1201.11.00",
+        "descricao_nbs": "Serviços de pesquisa e desenvolvimento em ciências físicas",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200016",
+        "nome_cClassTrib": "Prestação de serviços de pesquisa e desenvolvimento por Instituição Científica Tecnológica e de Inovação (ICT)"
+      },
+      {
+        "codigo_nbs": "1.1201.12.00",
+        "descricao_nbs": "Serviços de pesquisa e desenvolvimento em química e biologia",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1201.12.00",
+        "descricao_nbs": "Serviços de pesquisa e desenvolvimento em química e biologia",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200016",
+        "nome_cClassTrib": "Prestação de serviços de pesquisa e desenvolvimento por Instituição Científica Tecnológica e de Inovação (ICT)"
+      },
+      {
+        "codigo_nbs": "1.1201.20.00",
+        "descricao_nbs": "Serviços de pesquisa e desenvolvimento em biotecnologia",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1201.20.00",
+        "descricao_nbs": "Serviços de pesquisa e desenvolvimento em biotecnologia",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200016",
+        "nome_cClassTrib": "Prestação de serviços de pesquisa e desenvolvimento por Instituição Científica Tecnológica e de Inovação (ICT)"
+      },
+      {
+        "codigo_nbs": "1.1201.31.00",
+        "descricao_nbs": "Serviços de pesquisa e desenvolvimento em Tecnologia da Informação e Comunicação (TIC)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1201.31.00",
+        "descricao_nbs": "Serviços de pesquisa e desenvolvimento em Tecnologia da Informação e Comunicação (TIC)",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200016",
+        "nome_cClassTrib": "Prestação de serviços de pesquisa e desenvolvimento por Instituição Científica Tecnológica e de Inovação (ICT)"
+      }
+    ]
+  },
+  "03.02": {
+    "item_lc116": "03.02",
+    "descricao": "Cessão De Direito De Uso De Marcas E De Sinais De Propaganda.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1104.20.00",
+        "descricao_nbs": "Licenciamento de direitos sobre marcas",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100501",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.1108.20.00",
+        "descricao_nbs": "Cessão definitiva de direitos sobre marcas",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100501",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "03.03": {
+    "item_lc116": "03.03",
+    "descricao": "Exploração De Salões De Festas Centro De Convenções Escritórios Virtuais Stands Quadras Esportivas Estádios Ginásios Auditórios Casas De Espetáculos Parques De Diversões Canchas E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1805.31.00",
+        "descricao_nbs": "Serviços de reservas para centros de convenções auditórios e salas de exposições",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20101",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "200027",
+        "nome_cClassTrib": "Operações de locação cessão onerosa e arrendamento de bens imóveis"
+      }
+    ]
+  },
+  "03.04": {
+    "item_lc116": "03.04",
+    "descricao": "Locação Sublocação Arrendamento Direito De Passagem Ou Permissão De Uso De Ferrovia Rodovia Postes Cabos Dutos E Condutos.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1001.12.10",
+        "descricao_nbs": "Serviços de administração e locação sublocação arrendamento direito de passagem ou permissão de uso de ferrovia rodovia postes cabos dutos e condutos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20201",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "200027",
+        "nome_cClassTrib": "Operações de locação cessão onerosa e arrendamento de bens imóveis"
+      }
+    ]
+  },
+  "03.05": {
+    "item_lc116": "03.05",
+    "descricao": "Cessão De Andaimes Palcos Coberturas E Outras Estruturas De Uso Temporário.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0105.70.00",
+        "descricao_nbs": "Serviços de andaimes",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "050101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      },
+      {
+        "codigo_nbs": "1.0105.50.00",
+        "descricao_nbs": "Serviços de montagem de estruturas de aço",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "050101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200039",
+        "nome_cClassTrib": "Fornecimento dos serviços e o licenciamento ou cessão dos direitos destinados às produções nacionais artísticas (Anexo X)"
+      }
+    ]
+  },
+  "04.01": {
+    "item_lc116": "04.01",
+    "descricao": "Medicina E Biomedicina.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.22.00",
+        "descricao_nbs": "Serviços médicos especializados",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.02": {
+    "item_lc116": "04.02",
+    "descricao": "Análises Clínicas Patologia Eletricidade Médica Radioterapia Quimioterapia Ultra-Sonografia Ressonância Magnética Radiologia Tomografia E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.93.00",
+        "descricao_nbs": "Serviços laboratoriais",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      },
+      {
+        "codigo_nbs": "1.2301.94.00",
+        "descricao_nbs": "Serviços de diagnóstico por imagem",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.03": {
+    "item_lc116": "04.03",
+    "descricao": "Hospitais Clínicas Laboratórios Sanatórios Manicômios Casas De Saúde Prontos-Socorros Ambulatórios E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.11.00",
+        "descricao_nbs": "Serviços cirúrgicos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      },
+      {
+        "codigo_nbs": "1.2301.21.00",
+        "descricao_nbs": "Serviços de clínica médica",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.04": {
+    "item_lc116": "04.04",
+    "descricao": "Instrumentação Cirúrgica.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.11.00",
+        "descricao_nbs": "Serviços cirúrgicos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.05": {
+    "item_lc116": "04.05",
+    "descricao": "Acupuntura.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.99.00",
+        "descricao_nbs": "Outros serviços de saúde humana não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.06": {
+    "item_lc116": "04.06",
+    "descricao": "Enfermagem Inclusive Serviços Auxiliares.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.91.00",
+        "descricao_nbs": "Serviços de enfermagem",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.07": {
+    "item_lc116": "04.07",
+    "descricao": "Serviços farmacêuticos",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.99.00",
+        "descricao_nbs": "Outros serviços de saúde humana não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.08": {
+    "item_lc116": "04.08",
+    "descricao": "Terapia Ocupacional Fisioterapia E Fonoaudiologia.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.92.00",
+        "descricao_nbs": "Serviços de fisioterapia",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.09": {
+    "item_lc116": "04.09",
+    "descricao": "Terapias De Qualquer Espécie Destinadas Ao Tratamento Físico Orgânico E Mental.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.99.00",
+        "descricao_nbs": "Outros serviços de saúde humana não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.10": {
+    "item_lc116": "04.10",
+    "descricao": "Nutrição.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.99.00",
+        "descricao_nbs": "Outros serviços de saúde humana não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.11": {
+    "item_lc116": "04.11",
+    "descricao": "Obstetrícia.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.12.00",
+        "descricao_nbs": "Serviços ginecológicos e obstétricos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.12": {
+    "item_lc116": "04.12",
+    "descricao": "Odontologia.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.23.00",
+        "descricao_nbs": "Serviços odontológicos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.13": {
+    "item_lc116": "04.13",
+    "descricao": "Ortóptica.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.99.00",
+        "descricao_nbs": "Outros serviços de saúde humana não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.14": {
+    "item_lc116": "04.14",
+    "descricao": "Próteses Sob Encomenda.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.99.00",
+        "descricao_nbs": "Outros serviços de saúde humana não classificados em subposições anteriores",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.15": {
+    "item_lc116": "04.15",
+    "descricao": "Psicanálise.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.22.00",
+        "descricao_nbs": "Serviços médicos especializados",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.16": {
+    "item_lc116": "04.16",
+    "descricao": "Psicologia.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.98.00",
+        "descricao_nbs": "Serviços de psicologia",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.17": {
+    "item_lc116": "04.17",
+    "descricao": "Casas De Repouso E De Recuperação Creches Asilos E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2302.10.00",
+        "descricao_nbs": "Serviços de cuidado em saúde em unidades de acolhimento",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "30101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.18": {
+    "item_lc116": "04.18",
+    "descricao": "Inseminação Artificial Fertilização In Vitro E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.21.00",
+        "descricao_nbs": "Serviços de clínica médica",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.19": {
+    "item_lc116": "04.19",
+    "descricao": "Bancos De Sangue Leite Pele Olhos Óvulos Sêmen E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.95.00",
+        "descricao_nbs": "Serviços de bancos de material biológico humano",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "301001",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.20": {
+    "item_lc116": "04.20",
+    "descricao": "Coleta De Sangue Leite Tecidos Sêmen Órgãos E Materiais Biológicos De Qualquer Espécie.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.95.00",
+        "descricao_nbs": "Serviços de bancos de material biológico humano",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.21": {
+    "item_lc116": "04.21",
+    "descricao": "Unidade De Atendimento Assistência Ou Tratamento Móvel E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2301.96.00",
+        "descricao_nbs": "Serviços de ambulância",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "04.22": {
+    "item_lc116": "04.22",
+    "descricao": "Planos De Medicina De Grupo Ou Individual E Convênios Para Prestação De Assistência Médica Hospitalar Odontológica E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0910.10.00",
+        "descricao_nbs": "Serviços de planos privados de assistência à saúde",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "011002",
+        "nome_cClassTrib": "Planos de assistência à saúde"
+      }
+    ]
+  },
+  "04.23": {
+    "item_lc116": "04.23",
+    "descricao": "Outros Planos De Saúde Que Se Cumpram Através De Serviços De Terceiros.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0910.10.00",
+        "descricao_nbs": "Serviços de planos privados de assistência à saúde",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "011002",
+        "nome_cClassTrib": "Planos de assistência à saúde"
+      }
+    ]
+  },
+  "05.01": {
+    "item_lc116": "05.01",
+    "descricao": "Medicina Veterinária E Zootecnia.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1405.12.00",
+        "descricao_nbs": "Serviços de atendimento assistência ou tratamento para animais domésticos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "050101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200052",
+        "nome_cClassTrib": "Prestação de serviços de profissões intelectuais"
+      },
+      {
+        "codigo_nbs": "1.1405.22.00",
+        "descricao_nbs": "Serviços de atendimento assistência ou tratamento para animais de corte",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "050101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200038",
+        "nome_cClassTrib": "Fornecimento dos insumos agropecuários e aquícolas (Anexo IX)"
+      }
+    ]
+  },
+  "05.02": {
+    "item_lc116": "05.02",
+    "descricao": "Hospitais Clínicas Ambulatórios Prontos-Socorros E Congêneres Na Área Veterinária.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1405.11.00",
+        "descricao_nbs": "Serviços hospitalares com ou sem internação para animais domésticos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "050101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "05.08": {
+    "item_lc116": "05.08",
+    "descricao": "Guarda Tratamento Amestramento Embelezamento Alojamento E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1405.60.00",
+        "descricao_nbs": "Serviços de guarda adestramento embelezamento e alojamento",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "050101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "05.09": {
+    "item_lc116": "05.09",
+    "descricao": "Planos De Atendimento E Assistência Médico-Veterinária.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1405.50.00",
+        "descricao_nbs": "Planos de atendimento e assistência médico-veterinária",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "011005",
+        "nome_cClassTrib": "Planos de assistência à saúde de animais domésticos"
+      }
+    ]
+  },
+  "06.01": {
+    "item_lc116": "06.01",
+    "descricao": "Barbearia Cabeleireiros Manicuros Pedicuros E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2602.10.00",
+        "descricao_nbs": "Serviços de cabeleireiros e barbeiros",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "06.02": {
+    "item_lc116": "06.02",
+    "descricao": "Esteticistas Tratamento De Pele Depilação E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2602.20.00",
+        "descricao_nbs": "Serviços de manicure pedicure e tratamento cosmético",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "06.03": {
+    "item_lc116": "06.03",
+    "descricao": "Banhos Duchas Sauna Massagens E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2602.30.00",
+        "descricao_nbs": "Serviços de bem-estar físico",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "06.04": {
+    "item_lc116": "06.04",
+    "descricao": "Ginástica Dança Esportes Natação Artes Marciais E Demais Atividades Físicas.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2205.12.00",
+        "descricao_nbs": "Serviços de educação desportiva e recreacional",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200041",
+        "nome_cClassTrib": "Fornecimento de serviço de educação desportiva (art. 141. I)"
+      }
+    ]
+  },
+  "07.01": {
+    "item_lc116": "07.01",
+    "descricao": "Engenharia Agronomia Agrimensura Arquitetura Geologia Urbanismo Paisagismo E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1402.11.00",
+        "descricao_nbs": "Serviços de consultoria em arquitetura",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200052",
+        "nome_cClassTrib": "Prestação de serviços de profissões intelectuais"
+      },
+      {
+        "codigo_nbs": "1.1403.21.10",
+        "descricao_nbs": "Serviços de engenharia para projetos de construção residencial",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200052",
+        "nome_cClassTrib": "Prestação de serviços de profissões intelectuais"
+      }
+    ]
+  },
+  "07.02": {
+    "item_lc116": "07.02",
+    "descricao": "Execução De Obras De Construção Civil Hidráulica Ou Elétrica E De Outras Obras Semelhantes.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0101.11.00",
+        "descricao_nbs": "Serviços de construção de edificações residenciais de um e dois pavimentos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20201",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "200046",
+        "nome_cClassTrib": "Operações com bens imóveis"
+      },
+      {
+        "codigo_nbs": "1.0101.11.00",
+        "descricao_nbs": "Serviços de construção de edificações residenciais de um e dois pavimentos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20201",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "200045",
+        "nome_cClassTrib": "Operações relacionadas a projetos de reabilitação urbana de zonas históricas e de áreas críticas de recuperação e reconversão urbanística"
+      }
+    ]
+  },
+  "07.04": {
+    "item_lc116": "07.04",
+    "descricao": "Demolição.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0103.10.00",
+        "descricao_nbs": "Serviços de demolição",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20201",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "200046",
+        "nome_cClassTrib": "Operações com bens imóveis"
+      }
+    ]
+  },
+  "07.05": {
+    "item_lc116": "07.05",
+    "descricao": "Reparação Conservação E Reforma De Edifícios Estradas Pontes Portos E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0101.11.00",
+        "descricao_nbs": "Serviços de construção de edificações residenciais de um e dois pavimentos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20201",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "200046",
+        "nome_cClassTrib": "Operações com bens imóveis"
+      }
+    ]
+  },
+  "07.09": {
+    "item_lc116": "07.09",
+    "descricao": "Varrição Coleta Remoção Incineração Tratamento Reciclagem Separação E Destinação Final De Lixo.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2403.11.00",
+        "descricao_nbs": "Serviços de coleta de resíduos de serviços de saúde e outros resíduos biológicos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "050101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "07.10": {
+    "item_lc116": "07.10",
+    "descricao": "Limpeza Manutenção E Conservação De Vias E Logradouros Públicos Imóveis Chaminés Piscinas Parques Jardins E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1803.10.00",
+        "descricao_nbs": "Serviços gerais de limpeza",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20201",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "07.11": {
+    "item_lc116": "07.11",
+    "descricao": "Decoração E Jardinagem Inclusive Corte E Poda De Árvores.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1806.70.00",
+        "descricao_nbs": "Serviços de jardinagem",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "07.13": {
+    "item_lc116": "07.13",
+    "descricao": "Dedetização Desinfecção Desinsetização Imunização Higienização Desratização Pulverização E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1803.21.00",
+        "descricao_nbs": "Serviços de desinfecção e extermínio de pragas",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20201",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "07.19": {
+    "item_lc116": "07.19",
+    "descricao": "Acompanhamento E Fiscalização Da Execução De Obras De Engenharia Arquitetura E Urbanismo.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1402.15.00",
+        "descricao_nbs": "Serviços de arquitetura relativos ao acompanhamento e fiscalização da execução de projetos arquitetônicos e urbanísticos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20201",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "200052",
+        "nome_cClassTrib": "Prestação de serviços de profissões intelectuais"
+      }
+    ]
+  },
+  "08.01": {
+    "item_lc116": "08.01",
+    "descricao": "Ensino Regular Pré-Escolar Fundamental Médio E Superior.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2201.20.00",
+        "descricao_nbs": "Serviços de ensino fundamental",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200028",
+        "nome_cClassTrib": "Fornecimento dos serviços de educação (Anexo II)"
+      },
+      {
+        "codigo_nbs": "1.2204.10.00",
+        "descricao_nbs": "Serviços educacionais de graduação",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200025",
+        "nome_cClassTrib": "Fornecimento dos serviços de educação relacionados ao Programa Universidade para Todos (Prouni)"
+      }
+    ]
+  },
+  "08.02": {
+    "item_lc116": "08.02",
+    "descricao": "Instrução Treinamento Orientação Pedagógica E Educacional Avaliação De Conhecimentos De Qualquer Natureza.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2205.13.00",
+        "descricao_nbs": "Serviços de educação em línguas estrangeiras e de sinais",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200028",
+        "nome_cClassTrib": "Fornecimento dos serviços de educação (Anexo II)"
+      }
+    ]
+  },
+  "09.01": {
+    "item_lc116": "09.01",
+    "descricao": "Hospedagem De Qualquer Natureza Em Hotéis Apart-Hotéis Motéis E Congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0303.11.00",
+        "descricao_nbs": "Serviços de hospedagem em quartos para visitantes com faxina",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "30101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200048",
+        "nome_cClassTrib": "Hotelaria Parques de Diversão e Parques Temáticos"
+      }
+    ]
+  },
+  "09.02": {
+    "item_lc116": "09.02",
+    "descricao": "Agenciamento Organização Promoção Intermediação E Execução De Programas De Turismo Passeios Viagens Excursões Hospedagens.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1805.40.00",
+        "descricao_nbs": "Serviços de operadoras de turismo",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200051",
+        "nome_cClassTrib": "Agências de Turismo"
+      }
+    ]
+  },
+  "10.01": {
+    "item_lc116": "10.01",
+    "descricao": "Agenciamento Corretagem Ou Intermediação De Câmbio De Seguros De Cartões De Crédito De Planos De Saúde.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0906.12.00",
+        "descricao_nbs": "Serviços de corretagem de seguros saúde",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "011003",
+        "nome_cClassTrib": "Intermediação de planos de assistência à saúde"
+      }
+    ]
+  },
+  "10.05": {
+    "item_lc116": "10.05",
+    "descricao": "Agenciamento Corretagem Ou Intermediação De Bens Móveis Ou Imóveis.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1001.21.00",
+        "descricao_nbs": "Serviços de intermediação na compra e venda de imóveis residenciais",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "20301",
+        "local_incidencia_ibs": "local do imóvel",
+        "cClassTrib_padrao": "200046",
+        "nome_cClassTrib": "Operações com bens imóveis"
+      }
+    ]
+  },
+  "11.01": {
+    "item_lc116": "11.01",
+    "descricao": "Guarda E Estacionamento De Veículos Terrestres Automotores De Aeronaves E De Embarcações.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0604.30.00",
+        "descricao_nbs": "Serviços de estacionamento",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "11.02": {
+    "item_lc116": "11.02",
+    "descricao": "Vigilância Segurança Ou Monitoramento De Bens E Pessoas.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1802.50.00",
+        "descricao_nbs": "Serviços de guarda e escolta armada",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "030101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "12.01": {
+    "item_lc116": "12.01",
+    "descricao": "Espetáculos Teatrais.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2502.20.00",
+        "descricao_nbs": "Serviços de produção e apresentação de atuações artísticas ao vivo",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "40101",
+        "local_incidencia_ibs": "local do evento",
+        "cClassTrib_padrao": "200039",
+        "nome_cClassTrib": "Fornecimento dos serviços e o licenciamento ou cessão dos direitos destinados às produções nacionais artísticas (Anexo X)"
+      }
+    ]
+  },
+  "12.07": {
+    "item_lc116": "12.07",
+    "descricao": "Shows ballet danças desfiles bailes óperas concertos recitais festivais e congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2502.20.00",
+        "descricao_nbs": "Serviços de produção e apresentação de atuações artísticas ao vivo",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "40101",
+        "local_incidencia_ibs": "local do Evento",
+        "cClassTrib_padrao": "200039",
+        "nome_cClassTrib": "Fornecimento dos serviços e o licenciamento ou cessão dos direitos destinados às produções nacionais artísticas (Anexo X)"
+      }
+    ]
+  },
+  "13.03": {
+    "item_lc116": "13.03",
+    "descricao": "Fotografia e cinematografia inclusive revelação ampliação cópia reprodução trucagem e congêneres.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1408.11.00",
+        "descricao_nbs": "Serviços fotográficos de retratos",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "14.01": {
+    "item_lc116": "14.01",
+    "descricao": "Manutenção E Conservação De Máquinas Veículos Aparelhos Equipamentos Motores Elevadores.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2001.31.10",
+        "descricao_nbs": "Serviços de manutenção e reparação de veículos rodoviários motorizados",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "050101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "14.02": {
+    "item_lc116": "14.02",
+    "descricao": "Assistência técnica.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2001.20.00",
+        "descricao_nbs": "Serviços de manutenção e reparação de computadores e seus periféricos e de maquinário para escritório",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "050101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "15.01": {
+    "item_lc116": "15.01",
+    "descricao": "Administração De Fundos De Consórcio De Cartão De Crédito Ou Débito.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0901.40.00",
+        "descricao_nbs": "Serviços de cartão de crédito",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "010002",
+        "nome_cClassTrib": "Operações do serviço financeiro"
+      }
+    ]
+  },
+  "15.08": {
+    "item_lc116": "15.08",
+    "descricao": "Operações De Crédito Financiamentos E Garantias.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0901.33.00",
+        "descricao_nbs": "Serviços de empréstimos e financiamentos pessoais",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "16.01": {
+    "item_lc116": "16.01",
+    "descricao": "Serviços De Transporte Coletivo Municipal Rodoviário Metroviário Ferroviário E Aquaviário De Passageiros.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0401.11.19",
+        "descricao_nbs": "Serviços de transporte rodoviário local regular de passageiros",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "60101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "400001",
+        "nome_cClassTrib": "Fornecimento de serviços de transporte público coletivo de passageiros rodoviário e metroviário"
+      },
+      {
+        "codigo_nbs": "1.0401.16.10",
+        "descricao_nbs": "Serviços de transporte ferroviário local de passageiros",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "60101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "200021",
+        "nome_cClassTrib": "Serviços de transporte público coletivo de passageiros ferroviário e hidroviário"
+      }
+    ]
+  },
+  "16.02": {
+    "item_lc116": "16.02",
+    "descricao": "Outros Serviços De Transporte De Natureza Municipal.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0401.13.00",
+        "descricao_nbs": "Serviços de táxi",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "60101",
+        "local_incidencia_ibs": "local da prestação",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "17.01": {
+    "item_lc116": "17.01",
+    "descricao": "Assessoria Ou Consultoria De Qualquer Natureza.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1401.11.00",
+        "descricao_nbs": "Serviços de consultoria em gestão estratégica",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "17.06": {
+    "item_lc116": "17.06",
+    "descricao": "Propaganda E Publicidade Promoção De Vendas.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1406.11.00",
+        "descricao_nbs": "Serviços de campanhas publicitárias",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "17.14": {
+    "item_lc116": "17.14",
+    "descricao": "Advocacia.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1301.10.00",
+        "descricao_nbs": "Serviços de representação e consultoria jurídica criminal",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200052",
+        "nome_cClassTrib": "Prestação de serviços de profissões intelectuais"
+      }
+    ]
+  },
+  "17.16": {
+    "item_lc116": "17.16",
+    "descricao": "Auditoria.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1302.11.00",
+        "descricao_nbs": "Serviços de auditoria contábil",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200052",
+        "nome_cClassTrib": "Prestação de serviços de profissões intelectuais"
+      }
+    ]
+  },
+  "17.19": {
+    "item_lc116": "17.19",
+    "descricao": "Contabilidade Inclusive Serviços Técnicos E Auxiliares.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1302.21.00",
+        "descricao_nbs": "Serviços de contabilidade",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200052",
+        "nome_cClassTrib": "Prestação de serviços de profissões intelectuais"
+      }
+    ]
+  },
+  "17.20": {
+    "item_lc116": "17.20",
+    "descricao": "Consultoria E Assessoria Econômica Ou Financeira.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0905.50.00",
+        "descricao_nbs": "Serviços de consultoria financeira",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200052",
+        "nome_cClassTrib": "Prestação de serviços de profissões intelectuais"
+      }
+    ]
+  },
+  "21.01": {
+    "item_lc116": "21.01",
+    "descricao": "Serviços De Registros Públicos Cartorários E Notariais.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.1304.00.00",
+        "descricao_nbs": "Serviços notariais e de registro",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "000001",
+        "nome_cClassTrib": "Situações tributadas integralmente pelo IBS e CBS."
+      }
+    ]
+  },
+  "22.01": {
+    "item_lc116": "22.01",
+    "descricao": "Serviços De Exploração De Rodovia Cobrança De Pedágio.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.0604.21.00",
+        "descricao_nbs": "Serviços de operação de rodovias",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "80101",
+        "local_incidencia_ibs": "via explorada",
+        "cClassTrib_padrao": "000002",
+        "nome_cClassTrib": "Exploração de via"
+      }
+    ]
+  },
+  "25.01": {
+    "item_lc116": "25.01",
+    "descricao": "Funerais Cremação E Sepultamento.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2603.00.00",
+        "descricao_nbs": "Serviços funerários de cremação e de embalsamamento",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "200029",
+        "nome_cClassTrib": "Fornecimento dos serviços de saúde humana (Anexo III)"
+      }
+    ]
+  },
+  "25.03": {
+    "item_lc116": "25.03",
+    "descricao": "Planos Ou Convênio Funerários.",
+    "nbs_associadas": [
+      {
+        "codigo_nbs": "1.2603.00.00",
+        "descricao_nbs": "Serviços funerários de cremação e de embalsamamento",
+        "prestacao_onerosa": true,
+        "adquirente_exterior": false,
+        "indop": "100301",
+        "local_incidencia_ibs": "Domicílio principal do adquirente",
+        "cClassTrib_padrao": "011001",
+        "nome_cClassTrib": "Planos de assistência funerária."
+      }
+    ]
+  }
+}

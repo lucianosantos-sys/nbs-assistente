@@ -1,0 +1,28 @@
+{
+  "name": "nbs-assistente-cerebro",
+  "version": "1.0.0",
+  "description": "Cérebro Tributário Inteligente: Correlação CNAE x LC 116 x NBS x IBS/CBS (Reforma Tributária LC 214/2025)",
+  "main": "src/cerebro.js",
+  "bin": {
+    "nbs-cerebro": "cli.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/build_database.js",
+    "start": "node cli.js",
+    "test": "node test/test_cerebro.js"
+  },
+  "keywords": [
+    "nbs",
+    "cnae",
+    "lc116",
+    "iss",
+    "ibs",
+    "cbs",
+    "reforma-tributaria",
+    "lc214-2025",
+    "tributacao"
+  ],
+  "author": "NBS Assistente",
+  "license": "MIT"
+}
